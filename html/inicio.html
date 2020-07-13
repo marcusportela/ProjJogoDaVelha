@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>Jogo da velha</title>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Aplicando CSS-->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!--Fonte google-->
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <!--Linha titulo-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-">
+                <h1 class="titulo" id="resultadopag">JOGO DA VELHA</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <!--Linha jogadores-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-">
+                <div class="placar" id="placar1"></div>
+            </div>
+            <div class="col"></div>
+            <div class="col-">
+                <div class="placar" id="placar2"></div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <!--Quem joga-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-" id="quemjoga" style="margin-bottom: 1em; font-family: 'Bangers', cursive;">
+                <h1 style="font-family: 'Bangers', cursive;">Vez do jogador: </h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <!--Grid1-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-">
+                <div class="row">
+                    <div class="col-sm-4" style="margin: 0px; padding: 0px;">
+                        <div class="grade" id="a1" jogada=""></div>
+                    </div>
+                    <div class="col-sm-4" style="margin: 0px; padding: 0px;">
+                        <div class="grade" id="a2" jogada=""></div>
+                    </div>
+                    <div class="col-sm-4" style="margin: 0px; padding: 0px;">
+                        <div class="grade" id="a3" jogada=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <!--Grid2-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-">
+                <div class="row">
+                    <div class="col-sm-4" style="margin: 0px; padding: 0px;">
+                        <div class="grade" id="b1" jogada=""></div>
+                    </div>
+                    <div class="col-sm-4" style="margin: 0px; padding: 0px;">
+                        <div class="grade" id="b2" jogada=""></div>
+                    </div>
+                    <div class="col-sm-4" style="margin: 0px; padding: 0px;">
+                        <div class="grade" id="b3" jogada=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <!--Grid3-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-">
+                <div class="row">
+                    <div class="col-sm-4" style="margin: 0px; padding: 0px;">
+                        <div class="grade" id="c1" jogada=""></div>
+                    </div>
+                    <div class="col-sm-4" style="margin: 0px; padding: 0px;">
+                        <div class="grade" id="c2" jogada=""></div>
+                    </div>
+                    <div class="col-sm-4" style="margin: 0px; padding: 0px;">
+                        <div class="grade" id="c3" jogada=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <!--Frase Recomeçar-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-">
+                <div class="recomecar">Se o jogo acabou, deu problema ou ninguem ganhou clique no botão a baixo para recomeçar</div>
+            </div>
+            <div class="col"></div>
+        </div>
+        <!--Botão-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-">
+                <button style="margin-top: 1em; font-family: 'Bangers', cursive; font-size: 25px; margin-bottom: 1em;" type="button" class="btn btn-dark" onclick="refreshPage()">RECOMEÇAR</button>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+
+    <!--Meu script-->
+    <script src="../js/script.js"></script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

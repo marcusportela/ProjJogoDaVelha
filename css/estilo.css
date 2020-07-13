@@ -1,0 +1,40 @@
+.titulo {
+    border-radius: 80px;
+    padding: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: white;
+    border-style: solid;
+    background-color: black;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.placar {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 35px;
+    font-family: 'Bangers', cursive;
+    border-style: solid;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.grade {
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    width: 100px;
+    height: 100px;
+}
+.recomecar {
+    margin-top: 1em;
+    font-size: 25px;
+    font-family: 'Bangers', cursive;
+
+}
+.quem {
+    font-family: 'Bangers', cursive;
+}
