@@ -4,9 +4,9 @@ var vezjogador = player1;
 var result = false;
 
 var jogador1 = prompt("Para iniciar o jogo digite o nome do Jogador 1:");
-document.getElementById('placar1').innerHTML = 'jogador <img src=\"../img/x.png\" width=\"50px\" height=\"60px\"> é ' + jogador1
+document.getElementById('placar1').innerHTML = 'jogador <img src=\"img/x.png\" width=\"50px\" height=\"60px\"> é ' + jogador1
 var jogador2 = prompt("Agora o nome do Jogador 2:");
-document.getElementById('placar2').innerHTML = 'jogador <img src=\"../img/bola.png\" width=\"50px\" height=\"60px\"> é ' + jogador2
+document.getElementById('placar2').innerHTML = 'jogador <img src=\"img/bola.png\" width=\"50px\" height=\"60px\"> é ' + jogador2
 
 jogador_da_vez();
 jogar();
@@ -17,11 +17,11 @@ function jogador_da_vez(){
     return;}
     if (vezjogador == player1) {
         document.getElementById("quemjoga").innerHTML = "\
-        <h1>Vez do jogador: <img src=\"../img/x.png\" width=\"50px\" height=\"50px\"><h1>\
+        <h1>Vez do jogador: <img src=\"img/x.png\" width=\"50px\" height=\"50px\"><h1>\
         "
     } else {
         document.getElementById("quemjoga").innerHTML = "\
-        <h1>Vez do jogador: <img src=\"../img/bola.png\" width=\"50px\" height=\"50px\"><h1>\
+        <h1>Vez do jogador: <img src=\"img/bola.png\" width=\"50px\" height=\"50px\"><h1>\
         "
     }
 }
@@ -33,11 +33,11 @@ function jogar(){
             if (result) {return;}
             if(this.getElementsByTagName("img").length == 0){
                 if (vezjogador == player1){
-                    this.innerHTML = "<img src=\"../img/x.png\" width=\"90px\" height=\"90px\">";
+                    this.innerHTML = "<img src=\"img/x.png\" width=\"90px\" height=\"90px\">";
                     this.setAttribute("jogada", player1);
                     vezjogador = player2;
                 }else{
-                    this.innerHTML = "<img src=\"../img/bola.png\" width=\"90px\" height=\"90px\">";
+                    this.innerHTML = "<img src=\"img/bola.png\" width=\"90px\" height=\"90px\">";
                     this.setAttribute("jogada", player2);
                     vezjogador = player1;
                 }
