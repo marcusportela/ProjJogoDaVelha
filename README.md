@@ -1,3 +1,2 @@
-# Jogo da velha desenvolvido usando JavaScript :o: :x:
-
+# Jogo da velha desenvolvido usando JavaScript
 Criado com base no conhecimentos adiquiridos no curso ProgramEM.
