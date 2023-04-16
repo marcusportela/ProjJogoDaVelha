@@ -1,2 +1,2 @@
 # Jogo da velha desenvolvido usando JavaScript
-Criado com base no conhecimentos adiquiridos no curso ProgramEM.
+Criado com base nos conhecimentos adiquiridos no curso ProgramEM.
